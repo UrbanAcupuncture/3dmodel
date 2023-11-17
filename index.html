@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="model.png">
+    <meta property="twitter:image" content="model.png">
+    <title>kbs영상원 메타연구소</title>
+</head>
+<body>
+<!-- Import the component -->
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+
+<!-- Use it like any other HTML element -->
+<div>
+<h1>kbs영상원 메타연구소</h1>
+<model-viewer 
+    src="model.glb" 
+    ar 
+    ar-modes="webxr scene-viewer quick-look" 
+    environment-image="bg.hdr" 
+    autoplay
+    seamless-poster 
+    camera-controls >
+</model-viewer>
+</div>
+<div>
+    <a rel="ar" href="model.usdz">
+        <img src="model.png">    
+    </a>
+</div>
+</body>
+</html>
+
+<style>
+    h1 {
+        margin: 50px auto;
+        max-width: 180px;
+    }
+
+    model-viewer {
+        margin: 50px auto;
+        max-width: 800px;
+        height: 500px;
+    }
+</style>
